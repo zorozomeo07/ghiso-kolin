@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Ghi Số Lô Đề</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="at">Cách chơi:\nGiữa mỗi cược cần phân cách bởi dấu ; hoặc dấu , hoặc thanh dọc | hoặc khoảng trống \n Ví dụ: 01,02,03 hoặc 01 02 03 hoặc 01;02;03 hoặc 01|02|03
+    \n Xin vui lòng chọn số !</string>
+    <string name="rule">
+        Với đại đa số người dân Việt Nam, đặc biệt là lớp trẻ lô đề được coi là một trong những thứ gắn bó quen thuộc trong cuộc sống. Mua vé số không chỉ là một trò chơi may rủi, mà còn được coi là một “ kênh đầu tư “ của rất nhiều người. Người ta không tiếc công sức và thời gian để chơi lô đề, miễn sao đem lại cho họ một khoản tiền lời lãi nhất định.
+
+Hiện nay ở Việt Nam có 3 mảng lô đề phổ biến nhất, đó là: XSMB, XSMN và XSMT. Trong đó, xổ số miền Bắc là hình thức chơi xổ số có lượng thành viên đông đảo nhất vì mỗi ngày xổ số truyền thống chỉ quay 1 đài. Khác với miền Nam và miền Trung mỗi ngày có nhiều đài quay thưởng.Ở mỗi miền đều có những quy tắc và luật chơi nhất định, đòi hỏi người chơi phải nắm vững nguyên tắc của lô đề thuộc vùng miền đó. Bài viết này sẽ giúp các bạn hiểu hơn về luật chơi lô đề miền Bắc.
+
+        Luật chơi xổ số miền Bắc cực kỳ đơn giản, bạn chỉ cần chú ý là có thể chơi được ngay. Cụ thể như sau: XSMB có 27 kết quả, được phân chia từ giải đặc biệt cho đến giải bảy. Vậy kết quả của lô được dựa vào đâu và kết quả đề được được dựa trên cơ sở nào?
+
+Rất đơn giản, kết quả đề (giải đặc biệt) chính là hai con số cuối cùng của giải xổ số đặc biệt miền Bắc, trong khi đó chơi lô là sẽ xét trúng thưởng ở 2 số cuối cùng của tất cả các giải (từ giải nhất đến giải bảy).
+
+        Chỉ cần bạn đánh trúng số đề, hoặc đánh trúng 1 hoặc nhiều số lô kể trên là bạn đã dành chiến thắng. Thực sự rất đơn giản phải không nào?
+
+Tỷ lệ trúng thưởng là một phần rất quan trọng và được người chơi đặc biệt quan tâm. Tỷ lệ trúng thưởng tiền của số đề miền Bắc thường là 1 ăn 70. Điều đó có nghĩa là khi bạn bỏ ra 1 ngàn đánh đề, nếu trúng bạn sẽ được 70.000 đồng; nếu bạn bỏ ra 100.000 để đánh đề thì điều đó đồng nghĩa với việc phần thưởng của bạn sẽ tăng lên 100 lần, tức là 700.000 đồng.
+
+Có rất nhiều nơi muốn thu hút người chơi nhiều hơn, cho nên đã tăng mức thưởng lên, cụ thể là 1 ăn 80 hoặc 1 ăn 90. Tuy nhiên, bạn cũng nên lưu ý lựa chọn chỗ uy tín để chơi thay vì ham tiền lợi cao.
+    </string>
+</resources>

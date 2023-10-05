@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    tools:context=".FragmentApp.NhapSo">
+    <LinearLayout
+        android:id="@+id/lintop"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="40dp">
+        <include layout="@layout/iteam_time"/>
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="250dp" android:layout_below="@id/lintop"
+        android:padding="12dp"
+        android:gravity="start"
+        android:layout_marginHorizontal="25dp"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/t1"
+        android:hint="@string/at"
+        android:textSize="19sp"
+        android:inputType="number"
+        android:textColorHint="#80000000"
+        android:maxLength="2"
+        android:id="@+id/inputSo"/>
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/inputSo"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <include layout="@layout/iteam_number"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/timeAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arbutus"
+        android:text="Hết Giờ"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:visibility="invisible"
+      android:layout_centerInParent="true" />
+
+</RelativeLayout>

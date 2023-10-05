@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingHorizontal="5dp"
+    android:paddingVertical="8dp"
+    android:id="@+id/itemValue">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="All: 1000000"
+        android:textSize="15sp"
+        android:textColor="#EBFFFFFF"
+        android:id="@+id/all"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="00:09 s"
+        android:textSize="15sp"
+        android:textColor="#EBFFFFFF"
+        android:id="@+id/times"/>
+    <TextView
+        android:id="@+id/valueNS"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Value: 1000"
+        android:textSize="15sp"
+        android:textColor="#EBFFFFFF"
+       />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

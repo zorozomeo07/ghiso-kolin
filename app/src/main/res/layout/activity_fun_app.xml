@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bgapp"
+
+    tools:context=".FunApp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/arbutus"
+            android:gravity="center"
+            android:text="Xổ Số Miền Bắc"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:layout_marginHorizontal="25dp"
+            android:textStyle="normal"
+            android:text="...Đánh Lô, đánh đề , lô tô, lô xiên,..."
+            android:textColor="@color/white"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Ngày:"
+                android:paddingLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:textStyle="normal"
+                android:textSize="13sp"
+                android:id="@+id/dateTime"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right|center"
+                android:paddingRight="15dp"
+                android:text="Tỉ lệ cược ăn 1:99.6"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="6dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Chọn số"
+                android:layout_weight="1"
+                android:background="@drawable/nut_w1"
+                android:textColor="@color/black"
+                android:id="@+id/chonSo"/>
+            <TextView
+                android:background="@drawable/nut_w2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Nhập số"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:id="@+id/nhapSo"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               android:background="@drawable/nut_w3"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Chọn số Nhanh"
+                android:textColor="@color/black"
+                android:id="@+id/chonSoNhanh"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp">
+
+        <FrameLayout
+            android:id="@+id/fragmentApp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+    </ScrollView>
+</LinearLayout>
