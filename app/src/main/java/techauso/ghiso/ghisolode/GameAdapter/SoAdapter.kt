@@ -42,7 +42,7 @@ class SoAdapter(private val soModel: ArrayList<SoModel>,private  var context: Co
             holder.text2.text="XSST $so Giây"
             holder.text1.text="$so Giây"
         }
-        holder.text3.text="XSST $time Phút"
+        holder.text3.text="$time"
         holder.control.setOnClickListener {
             val intent= Intent(context,FunApp::class.java)
             val shave=context.getSharedPreferences("dataGhiso", AppCompatActivity.MODE_PRIVATE)

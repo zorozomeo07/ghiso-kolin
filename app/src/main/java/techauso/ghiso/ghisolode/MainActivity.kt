@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this@MainActivity,RuleGame::class.java))
         }
         intro.setOnClickListener {
-            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=DQj-_rXMCZA")))
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://taixiuvip.fun/game/introduce.html")))
         }
     }
 
