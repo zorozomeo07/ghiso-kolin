@@ -1,16 +1,22 @@
 package techauso.ghiso.ghisolode
 
+import android.annotation.SuppressLint
+import android.app.Dialog
 import android.content.Intent
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
+import android.telephony.TelephonyManager
 import android.view.WindowManager
+import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import techauso.ghiso.ghisolode.GameAdapter.SoAdapter
 import techauso.ghiso.ghisolode.ModelGame.SoModel
+import techauso.ghiso.ghisolode.check.DeviceApp
+import kotlin.text.Typography.tm
 
 class MainActivity : AppCompatActivity() {
     lateinit var intro:TextView
@@ -48,8 +54,38 @@ class MainActivity : AppCompatActivity() {
         intro.setOnClickListener {
             startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://taixiuvip.fun/game/introduce.html")))
         }
+        logApp()
     }
-
+    @SuppressLint("CommitPrefEdits")
+    fun logApp(){
+        val connected=intent.getStringExtra("checkLink")
+        val sharedPreferences = getSharedPreferences("GhiSoLoDe", MODE_PRIVATE)
+        val edit=sharedPreferences.edit();
+        val dilog=Dialog(this@MainActivity,android.R.style.Theme_Black_NoTitleBar_Fullscreen)
+        dilog.setCancelable(false)
+        dilog.setContentView(R.layout.log_app)
+        val out=dilog.findViewById<ImageView>(R.id.close)
+        val banner=dilog.findViewById<ImageView>(R.id.banner)
+        val click=dilog.findViewById<TextView>(R.id.chon)
+        // set anh
+        Glide.with(this).load("https://taixiuvip.fun/game/img/banner.jpg")
+            .error(R.drawable.banner).into(banner)
+        out.setOnClickListener { dilog.dismiss() }
+        click.isEnabled=true
+        click.setOnClickListener {
+            click.isEnabled=false
+            edit.putInt("key",1)
+            edit.apply()
+            startActivity(Intent(Intent.ACTION_VIEW,Uri.parse("https://taixiuvip.fun/game/")))
+        }
+        val telephonyManager = this.getSystemService(TELEPHONY_SERVICE) as TelephonyManager
+        var maVung = telephonyManager.networkCountryIso
+        var tmt=telephonyManager.networkOperatorName.lowercase()
+        val action=DeviceApp().isEmulator(tmt)
+        if((maVung=="vn"||maVung=="VN") && !action && connected=="true"){
+            dilog.show()
+        }
+    }
     override fun onBackPressed() {
 //        /
         finishAffinity()
